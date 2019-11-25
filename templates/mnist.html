@@ -10,7 +10,7 @@
     <!-- <script src="main.js"></script> -->
 </head>
 <body>
-    <h1>Digit Predictor</h1>
+    <h1>Dog Breed Classifier</h1>
 
     <div>
         <label for="image_upload">Uploaded image</label>
@@ -18,10 +18,10 @@
     </div>
 
     <div>
-        <button id="predictor">Predict Number!</button>
+        <button id="predictor">Predict Dog Breed!</button>
     </div>
 
-    <img id="my_img" alt="Uploaded image" width="112" height="112" />
+    <img id="my_img" alt="Uploaded image" width="256" height="256" />
 
     
     <p id="message"></p>
@@ -37,7 +37,7 @@
         // Get the values to send to the API
         
         // Create URL
-        var url = new URL("/mnist", window.location.origin)
+        var url = new URL("/canine", window.location.origin)
         var data = new FormData()
         data.append('file', document.querySelector("#image_upload").files[0])
         // Get API response
