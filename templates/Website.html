@@ -305,28 +305,35 @@
 
     <script>
       // Image uploading
-
-      document.querySelector("#image_upload").addEventListener("change", e => {
-        // Create URL
-        var url = new URL("/canine", window.location.origin);
-        var data = new FormData();
-        data.append("file", document.querySelector("#image_upload").files[0]);
-        // Get API response
-        fetch(url, {
-          method: "POST",
-          body: data
-        })
-          .then(response => {
-            console.log(response);
-            return response.json();
-          })
-          .then(res => {
-            console.log("res");
-            console.log(res);
-            // Update the message
-            document.querySelector("#message").innerText = res["message"];
+      function setUp() {
+        document
+          .querySelector("#image_upload")
+          .addEventListener("change", e => {
+            // Create URL
+            var url = new URL("/canine", window.location.origin);
+            var data = new FormData();
+            data.append(
+              "file",
+              document.querySelector("#image_upload").files[0]
+            );
+            // Get API response
+            fetch(url, {
+              method: "POST",
+              body: data
+            })
+              .then(response => {
+                console.log(response);
+                return response.json();
+              })
+              .then(res => {
+                console.log("res");
+                console.log(res);
+                // Update the message
+                document.querySelector("#message").innerText = res["message"];
+              });
           });
-      });
+      }
+      setUp();
 
       function readURL(input) {
         if (input.files && input.files[0]) {
@@ -351,6 +358,7 @@
         $(".file-upload-input").replaceWith($(".file-upload-input").clone());
         $(".file-upload-content").hide();
         $(".image-upload-wrap").show();
+        setUp();
       }
       $(".image-upload-wrap").bind("dragover", function() {
         $(".image-upload-wrap").addClass("image-dropping");
