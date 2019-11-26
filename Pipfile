@@ -5,6 +5,7 @@ name = "pypi"
 
 [dev-packages]
 pylint = "*"
+autopep8 = "*"
 
 [packages]
 scikit-learn = "*"
