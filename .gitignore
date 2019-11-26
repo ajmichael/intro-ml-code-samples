@@ -1,6 +1,6 @@
 # Project specific
 *.joblib
-models/
+# models/
 
 
 # Byte-compiled / optimized / DLL files
