@@ -1,344 +1,363 @@
 ﻿<!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1 {font-family: "Montserrat", sans-serif}
-img {margin-bottom: -7px}
-.w3-row-padding img {margin-bottom: 12px}
-</style>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <style>
+    body,
+    h1 {
+      font-family: "Montserrat", sans-serif;
+    }
+    img {
+      margin-bottom: -7px;
+    }
+    .w3-row-padding img {
+      margin-bottom: 12px;
+    }
+  </style>
 
-<!--<link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />-->
-<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
-<meta charset=utf-8 />
-<title>JS Bin</title>
-<!--[if IE]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<style>
- body {
-  font-family: sans-serif;
-  background-color: #eeeeee;
-}
+  <!--<link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />-->
+  <script
+    class="jsbin"
+    src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
+  ></script>
+  <script
+    class="jsbin"
+    src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"
+  ></script>
+  <meta charset="utf-8" />
+  <title>JS Bin</title>
+  <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #eeeeee;
+    }
 
-.file-upload {
-  background-color: #ffffff;
-  width: 800px;
-  margin: 0 auto;
-  padding: 50px;
-}
+    .file-upload {
+      background-color: #ffffff;
+      width: 800px;
+      margin: 0 auto;
+      padding: 50px;
+    }
 
-.file-upload-btn {
-  width: 100%;
-  margin: 0;
-  color: #fff;
-  background: #AEAEAF;
-  border: none;
-  padding: 20px;
-  border-radius: 4px;
-  transition: all .2s ease;
-  outline: none;
-  text-transform: uppercase;
-  font-weight: 700;
-}
+    .file-upload-btn {
+      width: 100%;
+      margin: 0;
+      color: #fff;
+      background: #aeaeaf;
+      border: none;
+      padding: 20px;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+      outline: none;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
 
-.file-upload-btn:hover {
-  background: #000000;
-  color: #ffffff;
-  transition: all .2s ease;
-  cursor: pointer;
-}
+    .file-upload-btn:hover {
+      background: #000000;
+      color: #ffffff;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
 
-.file-upload-btn:active {
-  border: 0;
-  transition: all .2s ease;
-}
+    .file-upload-btn:active {
+      border: 0;
+      transition: all 0.2s ease;
+    }
 
-.file-upload-content {
-  display: none;
-  text-align: center;
-}
+    .file-upload-content {
+      display: none;
+      text-align: center;
+    }
 
-.file-upload-input {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  outline: none;
-  opacity: 0;
-  cursor: pointer;
-}
+    .file-upload-input {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      outline: none;
+      opacity: 0;
+      cursor: pointer;
+    }
 
-.image-upload-wrap {
-  margin: 30px;
-  border: 4px dashed #AEAEAF;
-  position: relative;
-}
+    .image-upload-wrap {
+      margin: 30px;
+      border: 4px dashed #aeaeaf;
+      position: relative;
+    }
 
-.image-dropping,
-.image-upload-wrap:hover {
-  background-color: #000000;
-  transition: all .2s ease;
-  border: 4px dashed #ffffff;
-}
+    .image-dropping,
+    .image-upload-wrap:hover {
+      background-color: #000000;
+      transition: all 0.2s ease;
+      border: 4px dashed #ffffff;
+    }
 
-.image-title-wrap {
-  padding: 0 15px 15px 15px;
-  color: #222;
-}
+    .image-title-wrap {
+      padding: 0 15px 15px 15px;
+      color: #222;
+    }
 
-.drag-text {
-  text-align: center;
-}
+    .drag-text {
+      text-align: center;
+    }
 
-.drag-text h3 {
-  font-weight: 100;
-  text-transform: uppercase;
-  color: #AEAEAF;
-  padding: 60px 0;
-}
+    .drag-text h3 {
+      font-weight: 100;
+      text-transform: uppercase;
+      color: #aeaeaf;
+      padding: 60px 0;
+    }
 
-.file-upload-image {
-  max-height: 500px;
-  max-width: 500px;
-  margin: auto;
-  padding: 20px;
-}
+    .file-upload-image {
+      max-height: 500px;
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
+    }
 
-.remove-image {
-  width: 200px;
-  margin: 0;
-  color: #fff;
-  background: #FF8181;
-  border: none;
-  padding: 20px;
-  border-radius: 4px;
-  transition: all .2s ease;
-  outline: none;
-  text-transform: uppercase;
-  font-weight: 700;
-}
+    .remove-image {
+      width: 200px;
+      margin: 0;
+      color: #fff;
+      background: #ff8181;
+      border: none;
+      padding: 20px;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+      outline: none;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
 
-.remove-image:hover {
-  background: #FF1919;
-  color: #ffffff;
-  transition: all .2s ease;
-  cursor: pointer;
-}
+    .remove-image:hover {
+      background: #ff1919;
+      color: #ffffff;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
 
-.remove-image:active {
-  border: 0;
-  transition: all .2s ease;
-}
+    .remove-image:active {
+      border: 0;
+      transition: all 0.2s ease;
+    }
 
+    .retry-image {
+      width: 200px;
+      margin: 0;
+      color: #fff;
+      background: #01a209;
+      border: none;
+      padding: 20px;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+      outline: none;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
 
-.retry-image {
-  width: 200px;
-  margin: 0;
-  color: #fff;
-  background: #01A209;
-  border: none;
-  padding: 20px;
-  border-radius: 4px;
-  transition: all .2s ease;
-  outline: none;
-  text-transform: uppercase;
-  font-weight: 700;
-}
+    .retry-image:hover {
+      background: #007c06;
+      color: #ffffff;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+  </style>
 
-.retry-image:hover {
-  background: #007C06;
-  color: #ffffff;
-  transition: all .2s ease;
-  cursor: pointer;
-}
+  <body>
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-content" style="max-width:1500px">
+      <!-- Header -->
+      <div class="w3-opacity">
+        <div class="w3-clear"></div>
+        <header class="w3-center w3-margin-bottom">
+          <h1><b>DOG BREED CLASSIFIER</b></h1>
+          <p>
+            <b
+              >By Matt Bussing, Grace Carter, Brian Kelly, Alex Michael, and
+              Hanna Neuerer</b
+            >
+          </p>
+        </header>
+      </div>
 
+      <!-- Upload the image and display results-->
 
-</style>
+      <div class="w3-content">
+        <button
+          class="file-upload-btn"
+          type="button"
+          onclick="$('.file-upload-input').trigger( 'click' )"
+        >
+          Add Image
+        </button>
 
+        <div class="image-upload-wrap">
+          <input
+            id="image_upload"
+            class="file-upload-input"
+            type="file"
+            onchange="readURL(this);"
+            accept="image/*"
+          />
+          <div class="drag-text">
+            <h3>Drag and drop a file or select add Image</h3>
+          </div>
+        </div>
+        <div class="file-upload-content">
+          <img class="file-upload-image" src="/static/1.jpg" alt="your image" />
+          <div class="image-title-wrap">
+            <button type="button" onclick="removeUpload()" class="remove-image">
+              Remove <span class="image-title">Uploaded Image</span>
+            </button>
+          </div>
+        </div>
 
-<body>
+        <!-- Output -->
 
+        <div class="file-upload-content">
+          <img src="/static/1.jpg" style="width:100%;max-width:500px" />
+          <h3 id="message">
+            Congratulations! <br />
+            Your cuddly companion is a -----! <br />
+            With a certainty of ----%
+            <br />
+          </h3>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-content" style="max-width:1500px">
+          <div class="image-title-wrap">
+            <button type="button" onclick="removeUpload()" class="retry-image">
+              Try again?
+            </button>
+          </div>
+        </div>
+      </div>
 
-<!-- Header -->
-<div class="w3-opacity">
+      <!-- Photo Grid -->
+      <!-- Images for this must remain with the .html file -->
 
-<div class="w3-clear"></div>
-<header class="w3-center w3-margin-bottom">
-  <h1><b>DOG BREED CLASSIFIER</b></h1>
-  <p><b>By Matt Bussing, Grace Carter, Brian Kelly, Alex Michael, and Hanna Neuerer</b></p>
-  
-</header>
-</div>
+      <div class="w3-row-padding" id="myGrid" style="margin-bottom:128px">
+        <div class="w3-third">
+          <img src="/static/1.jpg" style="width:100%" />
+          <img src="/static/2.jpg" style="width:100%" />
+          <img src="/static/14.jpg" style="width:100%" />
+          <img src="/static/4.jpg" style="width:100%" />
+          <img src="/static/5.jpg" style="width:100%" />
+          <img src="/static/6.jpg" style="width:100%" />
+        </div>
 
-<!-- Upload the image and display results-->
+        <div class="w3-third">
+          <img src="/static/7.jpg" style="width:100%" />
+          <img src="/static/8.jpg" style="width:100%" />
+          <img src="/static/9.jpg" style="width:100%" />
+          <img src="/static/10.jpg" style="width:100%" />
+          <img src="/static/11.jpg" style="width:100%" />
+          <img src="/static/12.jpg" style="width:100%" />
+        </div>
 
-<div class="w3-content">
+        <div class="w3-third">
+          <img src="/static/13.jpg" style="width:100%" />
+          <img src="/static/3.jpg" style="width:100%" />
+          <img src="/static/15.jpg" style="width:100%" />
+          <img src="/static/16.jpg" style="width:100%" />
+          <img src="/static/17.jpg" style="width:100%" />
+          <img src="/static/18.jpg" style="width:100%" />
+        </div>
+      </div>
 
-  <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
-
-  <div class="image-upload-wrap">
-    <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
-    <div class="drag-text">
-      <h3>Drag and drop a file or select add Image</h3>
+      <!-- End Page Content -->
     </div>
-  </div>
-  <div class="file-upload-content">
-    <img class="file-upload-image" src="/static/1.jpg" alt="your image" />
-    <div class="image-title-wrap">
-      <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
-    </div>
-  </div>
-  
-  <!-- Output -->
-  
-  <div class="file-upload-content">
-    <img src="/static/1.jpg" style="width:100%;max-width:500px">
-	<h3>Congratulations!
-	<br> Your cuddly companion is a -----! 
-	<br> With a certainty of ----% 
-	<br>
-	</h3>
-	
-	<div class="image-title-wrap">
-      <button type="button" onclick="removeUpload()" class="retry-image">Try again? </button>
-    </div>
-	
-    
-  </div>
-  
-  
 
-</div>
+    <!-- Footer -->
+    <footer
+      class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge"
+      style="margin-top:128px"
+    >
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+      <p class="w3-medium">
+        Powered by
+        <a
+          href="https://www.w3schools.com/w3css/default.asp"
+          target="_blank"
+          class="w3-hover-text-green"
+          >w3.css</a
+        >
+      </p>
+    </footer>
 
+    <script>
+      // Image uploading
 
-
-<!-- Photo Grid -->
-<!-- Images for this must remain with the .html file -->
-
-<div class="w3-row-padding" id="myGrid" style="margin-bottom:128px">
-  <div class="w3-third">
-    <img src="/static/1.jpg" style="width:100%">
-    <img src="/static/2.jpg" style="width:100%">
-    <img src="/static/14.jpg" style="width:100%">
-    <img src="/static/4.jpg" style="width:100%">
-    <img src="/static/5.jpg" style="width:100%">
-    <img src="/static/6.jpg" style="width:100%">
-  </div>
-
-  <div class="w3-third">
-    <img src="/static/7.jpg" style="width:100%">
-    <img src="/static/8.jpg" style="width:100%">
-    <img src="/static/9.jpg" style="width:100%">
-    <img src="/static/10.jpg" style="width:100%">
-    <img src="/static/11.jpg" style="width:100%">
-    <img src="/static/12.jpg" style="width:100%">
-  </div>
-
-  <div class="w3-third">
-    <img src="/static/13.jpg" style="width:100%">
-    <img src="/static/3.jpg" style="width:100%">
-    <img src="/static/15.jpg" style="width:100%">
-    <img src="/static/16.jpg" style="width:100%">
-    <img src="/static/17.jpg" style="width:100%">
-    <img src="/static/18.jpg" style="width:100%">
-  </div>
-</div>
-
-<!-- End Page Content -->
-</div>
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
- 
-<script>
-
-
-// Image uploading 
-
-
-document.querySelector("#image_upload").addEventListener("change", (e)=>{
-        // https://stackoverflow.com/a/27002935/818687
-        document.querySelector('#my_img').src = window.URL.createObjectURL(e.target.files[0])
-    })
-
-    document.querySelector("#predictor").addEventListener("click", ()=>{
-        // Get the values to send to the API
-
+      document.querySelector("#image_upload").addEventListener("change", e => {
         // Create URL
-        var url = new URL("/canine", window.location.origin)
-        var data = new FormData()
-        data.append('file', document.querySelector("#image_upload").files[0])
+        var url = new URL("/canine", window.location.origin);
+        var data = new FormData();
+        data.append("file", document.querySelector("#image_upload").files[0]);
         // Get API response
         fetch(url, {
-            method: "POST",
-            body: data
-        }).then((response)=>{
-            console.log(response)
-            return response.json()
-        }).then((res)=>{
-            console.log(res)
-            // Update the message
-            document.querySelector("#message").innerText = res['message']
+          method: "POST",
+          body: data
         })
-    })
+          .then(response => {
+            console.log(response);
+            return response.json();
+          })
+          .then(res => {
+            console.log("res");
+            console.log(res);
+            // Update the message
+            document.querySelector("#message").innerText = res["message"];
+          });
+      });
 
+      function readURL(input) {
+        if (input.files && input.files[0]) {
+          var reader = new FileReader();
 
-function readURL(input) {
-  if (input.files && input.files[0]) {
+          reader.onload = function(e) {
+            $(".image-upload-wrap").hide();
 
-    var reader = new FileReader();
+            $(".file-upload-image").attr("src", e.target.result);
+            $(".file-upload-content").show();
 
-    reader.onload = function(e) {
-      $('.image-upload-wrap').hide();
+            $(".image-title").html(input.files[0].name);
+          };
 
-      $('.file-upload-image').attr('src', e.target.result);
-      $('.file-upload-content').show();
+          reader.readAsDataURL(input.files[0]);
+        } else {
+          removeUpload();
+        }
+      }
 
-      $('.image-title').html(input.files[0].name);
-    };
-
-    reader.readAsDataURL(input.files[0]);
-
-  } else {
-    removeUpload();
-  }
-}
-
-function removeUpload() {
-  $('.file-upload-input').replaceWith($('.file-upload-input').clone());
-  $('.file-upload-content').hide();
-  $('.image-upload-wrap').show();
-}
-$('.image-upload-wrap').bind('dragover', function () {
-		$('.image-upload-wrap').addClass('image-dropping');
-	});
-	$('.image-upload-wrap').bind('dragleave', function () {
-		$('.image-upload-wrap').removeClass('image-dropping');
-});
-
-
-
-
-
-</script>
-
-</body>
+      function removeUpload() {
+        $(".file-upload-input").replaceWith($(".file-upload-input").clone());
+        $(".file-upload-content").hide();
+        $(".image-upload-wrap").show();
+      }
+      $(".image-upload-wrap").bind("dragover", function() {
+        $(".image-upload-wrap").addClass("image-dropping");
+      });
+      $(".image-upload-wrap").bind("dragleave", function() {
+        $(".image-upload-wrap").removeClass("image-dropping");
+      });
+    </script>
+  </body>
 </html>
